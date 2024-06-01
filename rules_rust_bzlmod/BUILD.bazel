@@ -1,0 +1,11 @@
+load("@rules_rust//rust:defs.bzl", "rust_binary")
+
+rust_binary(
+    name = "rust_main",
+    srcs = ["main.rs"],
+    edition = "2021",
+    deps = [
+        "@crates//:anyhow",
+    ],
+)
+####
